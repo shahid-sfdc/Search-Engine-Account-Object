@@ -1,0 +1,24 @@
+<template>
+<lightning-card icon-name="standard:account" variant="base">
+  <p>This is testing card</p>
+  
+  <lightning-input 
+    type="text"
+    label="Enter the Account Name"
+    name = "accountName"
+    onkeyup={handleSearch}
+  ></lightning-input>
+</lightning-card>
+<lightning-card icon-name="standard:account" variant="base">
+  <P>This is the given value</P>
+  <template lwc:if={fetchlist}>
+    
+    <template for:each={fetchlist} for:item="account">
+      <div key ={account.Id} class = "container">
+      <p>{account.Name}</p>
+      <p>{account.Id}</p>
+    </div>
+    </template>
+  </template>
+</lightning-card>
+</template>
