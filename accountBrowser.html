@@ -1,6 +1,6 @@
 <template>
-<lightning-card icon-name="standard:account" variant="base">
-  <p>This is testing card</p>
+<lightning-card icon-name="standard:account" title="Account Search" variant="base">
+ 
   
   <lightning-input 
     type="text"
@@ -9,8 +9,8 @@
     onkeyup={handleSearch}
   ></lightning-input>
 </lightning-card>
-<lightning-card icon-name="standard:account" variant="base">
-  <P>This is the given value</P>
+<lightning-card icon-name="standard:account" title="Result" variant="base">
+  
   <template lwc:if={fetchlist}>
     
     <template for:each={fetchlist} for:item="account">
