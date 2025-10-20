@@ -53,7 +53,7 @@ As the user types a new keyword, the list automatically refreshes — all withou
 
 **🖼️ UI Screenshots**
 
-You can replace these placeholders later with your real screenshots to visualize each step of the user experience.
+
 
 🔸 1. Search Box Interface
 
